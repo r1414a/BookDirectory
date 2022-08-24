@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+}
+
+div#logo{
+    font-size: 2.5rem;
+    align-items: center;
+    display: flex;
+    left: 30px;
+    position: absolute;
+}
+
+div img{
+    height: 67px;
+    filter: invert(1);
+}
+#navbarpages{
+    color: lightcoral;
+    background-color: black;
+}
+#navbarpages ul{
+    display: flex;
+    justify-content: right;
+}
+#navbarpages li{
+    font-size: 1.5rem;
+    list-style: none;
+    padding: 20px 30px;
+}
+
+a{
+    text-decoration: none;
+    color: lightcoral;
+}
+div#maincontent {
+    background: center / cover no-repeat url(/static/images/bg.jpg);
+    height: 95vh;
+    font-size: 5rem;
+    color: white;
+    padding: 190px 175px;
+}

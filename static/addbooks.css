@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+}
+h1{
+    text-align: center;
+}
+div.addbooks{
+    margin-top: 40px;
+    color: white;
+}
+input{
+    width: 500px;
+    padding: 4px;
+    background-color: black;
+    color: lightcoral;
+    border-radius: 10px;
+    border: 3px solid lightcoral;
+    font-size: 1rem;
+}
+textarea{
+    background-color: black;
+    color: lightcoral;
+    border-radius: 10px;
+    border: 3px solid lightcoral;
+    font-size: 1rem;
+}
+button{
+    width: 85px;
+    height: 30px;
+    margin: auto;
+    border: 3px solid lightcoral;
+    border-radius: 5px;
+    background-color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    color: lightcoral;
+}
+button:hover{
+    cursor: pointer;
+    background-color: white;
+}
+form{
+    display: grid;
+    font-size: 1.2rem;
+    justify-content: center;
+}

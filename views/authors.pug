@@ -1,0 +1,17 @@
+extends base.pug
+
+block style
+    style     
+        include ../static/authors.css
+        include ../static/index_style.css
+block content 
+    h1 List of Authors names
+    div.container 
+        each a in names 
+            h2 #{a.authorname}
+                a(href=`/addauthors/${a._id}`)
+                    button Edit
+                        form(action=`/authors/${a._id}`, method="post")      
+                            button Delete
+                            a(href=`/books/${a.authorname}` class='view') View Books Of This Author
+                br 

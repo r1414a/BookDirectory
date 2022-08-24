@@ -1,0 +1,30 @@
+extend base.pug
+
+block style
+    style     
+        include ../static/index_style.css
+        include ../static/books.css
+block content
+     div.container
+        each bookdetail in booksinfo
+            div.box1
+                h2   Title 
+                h3 #{bookdetail.title}
+                br
+                h2    Author Name
+                h3 #{bookdetail.author}
+                br
+                h2    Publish Date
+                h3 #{bookdetail.date}
+                br
+                h2    Page Count
+                h3 #{bookdetail.count}
+                form(action=`/books/${bookdetail._id}`, method="post") 
+                    button Delete
+            div.box2    
+                h2    Description
+                h3 #{bookdetail.desc}
+            br
+            hr
+                
+            

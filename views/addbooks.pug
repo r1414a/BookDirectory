@@ -1,0 +1,22 @@
+extends base.pug
+
+block style
+    style     
+        include ../static/addbooks.css
+        include ../static/index_style.css
+block content 
+    div.addbooks
+        h1 New Book 
+        form(action='/books',method='post')
+            |   Title  
+            input(type="text", name="title") 
+            |   Author 
+            input(type="text", name="author")
+            |   Publish Date 
+            input(type="date", name="date")
+            |   Page Count 
+            input(type="number", name="count")
+            |   Description 
+            textarea(name="desc", cols="30", rows="10", placeholder='Description of the Book')
+            br
+            button(type="submit") Submit

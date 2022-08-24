@@ -1,0 +1,16 @@
+doctype html 
+html
+    head    
+        title   Book-Directory 
+        block style 
+body 
+    nav#navbarpages
+        ul
+            div#logo   
+                img(src='/static/images/images.png') 
+                a(href='/') BookDirectory
+            li #[a(href='/authors') Authors]
+            li #[a(href='/addauthors') Add Authors]
+            li #[a(href='/books') Books]      
+            li #[a(href='/addbooks') Add Book]
+block content

@@ -1,0 +1,13 @@
+extends base.pug
+
+block style
+    style     
+        include ../static/addauthors.css
+        include ../static/index_style.css
+block content 
+    div.container
+        div.addauthors
+            h1 New Author
+            form(action="/authors", method="post") 
+                input(type="text" name="authorname" placeholder=`${x}`)
+                button(type="submit") Add
